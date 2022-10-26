@@ -15,6 +15,14 @@ public class Main {
         System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullName.toUpperCase());
 
 
+        // Строки. Задача 3.
+        System.out.println("Строки. Задача 3.");
+        String newFirstName = firstName.replace(firstName, "Иванов");
+        String newMiddleName = middleName.replace(middleName, "Семён");
+        String newLstName = lastName.replace(lastName, "Семёнович");
+        String newFullName = newFirstName + " " + newMiddleName + " "+ newLstName;
+        newFullName = newFullName.replace("ё", "е");
+        System.out.println("Данные ФИО сотрудника — " + newFullName);
     }
 }
 
